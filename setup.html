@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="gameScript.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<link rel="stylesheet" type="text/css" href="./Styles/setup.css">
+</head>
+    
+<body>
+    <div class="set-container">
+      <div id="logo">
+        <img src="logo1.png" alt="app-logo">
+    </div> <br>
+    <div class="form"><form action="game.html" method="post">
+    <fieldset>
+	<legend>Select Your Avatar:</legend>
+    
+	</fieldset><br />
+        
+    <fieldset>
+	<legend>Select Your Audio Prompt:</legend>
+    
+	</fieldset><br />
+    
+        <fieldset>
+	<legend>Select Your Background Theme:</legend>
+    
+	</fieldset><br />
+        
+	<fieldset>
+	<legend>Select Number of Players:</legend>
+    <input type="radio" name="players" value="1" required/> 1
+	<input type="radio" name="players" value="2" /> 2
+	<input type="radio" name="players" value="3" /> 3
+	<input type="radio" name="players" value="4" /> 4
+    <input type="radio" name="players" value="5" /> 5
+	</fieldset><br />
+	
+	<fieldset>
+	<legend>Select Starting Life Total:</legend>
+        <input type="radio" name="life" value="10" required/> 10 
+        <input type="radio" name="life" value="20" required/> 20 
+        <input type="radio" name="life" value="30" /> 30
+        <input type="radio" name="life" value="40" /> 40
+        <input type="radio" name="life" value="50" /> 50
+	</fieldset><br/>
+      <div id="set">
+          <button class="w3-button w3-blue" type="submit" value="Submit"><span>Start</span></button>
+          <button class="w3-button w3-blue" type="submit" onclick="window.location.href='landingpage.html'" value="Exit"><span>Exit</span></button>
+          
+      
+        </div>
+      </form></div>
+    </div>
+</body>
+</html>
