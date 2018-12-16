@@ -1,0 +1,151 @@
+/*button styling and modal styling from w3 schools
+CSS styling sheet for all the pages the application
+
+*/
+
+.container{
+	margin-bottom: 80px;
+}
+.img{
+    margin-top: 100px;
+}
+
+p, h3{
+ 	
+	font-family: Helvetica, Courier Header;
+}
+
+
+body {
+	font-family: Helvetica, Courier Header;
+	
+}
+
+.navButtons{
+	background-color: #8cd2f7;
+	border: none;
+	color: white;
+	text-align: center;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	height: 33.3%;
+	width: 100%;
+	box-shadow: 0px 10px 10px 0px black;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 75%;
+}
+.buttons, .submit{
+    background-color: #8cd2f7;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.navButtons:hover, .buttons:hover{
+	background-color: white;
+	color: #8cd2f7;
+}
+.gameNav{
+	width: 20%;
+    float: left;
+}
+#magicButton{
+	background-image: url('../resources/magicLogo.png');
+}
+#yugiButton{
+	background-image: url('../resources/yugiLogo.png');
+}
+#pokeButton{
+	background-image: url('../resources/pokeLogo.png');
+}
+body{
+margin: 0px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #8cd2f7;
+    color: white;
+	text-align: center;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #8cd2f7;
+    color: white;
+	text-align: center;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+	text-align: center;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+.cmdrTable th{
+	text-align: center;
+	width: 50px;
+}
+#numberOfPlayers, #startingLife{
+	width: 75px;
+}
+.updateNumbers {
+	width: 50px;
+}
+#pageContent{
+	display: flex;
+	align-items: right;
+	height: 100%;
+	position: relative;
+}
+.poisonTotals{
+	color: 44aa00;
+}
+.gameTable{
+	height: 100%;
+	width: 100%;
+	font-size: 20px;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.gameTable th{
+	width: 30%;
+}

@@ -1,0 +1,46 @@
+<!-- Login page-->
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="utf-8"/>
+    <!-- Responsive Web design library, Jquery libraries and Links to CSS and JavaScripts sheets-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lifeline Tracker</title>
+	<link rel="stylesheet" type="text/css" href="include/styles.css">
+    
+    
+    <script src="include/login.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+    
+<body>
+    <!-- The Div element to hold the Application Image-->
+    <div class="img" align= "center"> <img src ="resources/logo.png" alt = "Application Logo"></div>
+    
+    <!-- The form container, its form element, and submit buttons for logging in-->
+<div class="container" align= "center">
+<div class="header">
+ <h1>Login Page</h1>
+ </div>
+
+ <form name="login" onsubmit="return validateForm() ;" method="post">
+
+ <ul>
+ Username: <input class="username" type="text" name="username" id="username"> <br> <br>
+ 
+
+ Password: <input class="password" type="password" name="password" id="password">
+ 
+ </ul>
+<div align= "center">
+<input type="button" class="submit" value="Log In" name="submit" onclick="validate()">
+     
+<input type="button" id="Regbtn" class="buttons" value= "Register" onclick="window.location.href='reg.html'">
+</div>
+</form>
+</div>
+
+</body>
+</html>

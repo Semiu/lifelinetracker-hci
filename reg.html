@@ -1,0 +1,48 @@
+<!-- Registration page-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <!-- Responsive Web design library, Jquery libraries and Links to CSS and JavaScripts sheets-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <title>Lifeline Tracker</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.4.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.11.js"></script>
+    <link rel="stylesheet" type="text/css" href="include/styles.css">
+    <script src="loginstore.js"></script>
+    <script src="validate.js"></script>
+    <script src="include/login.js"></script>
+  </head>
+  <body>
+      
+      <!-- The Div element to hold the Application Image-->
+    <div class="img" align= "center"> <img src ="resources/logo.png" alt = "Application Logo"></div>
+      
+<!-- The form container, its form element, and submit buttons for registering new user-->
+          
+      <div class="container" align ="center">
+    
+        <h1>Registration Page</h1>
+        <form name="register" method="post"> 
+        <ul>
+        <tr><td>Email add.:  </td><td><input class="user-id" id="email" type ="text" placeholder="" name ="user-id"/></td></tr><br><br>
+            
+        <tr><td>Username: </td><td><input class="form-user" id="username" type ="text" placeholder="" name ="form-user"/></td></tr><br><br>
+        
+        <tr><td>Password: </td><td><input class="form-pass" id="password" type ="password" placeholder="" name ="form-pass"/></td> </tr> <br><br>
+        </ul>
+        <div><input type="button" id="Regbtn" class="buttons" value= "Login Page" onclick="window.location.href='login.html'">
+        <button class="buttons" onclick="handleReg()">
+          Register
+        </button>
+        </div>
+        </form>
+        </div>
+      
+   
+</body>
+</html>
